@@ -1,0 +1,223 @@
+Problem:    part2
+Rows:       59
+Columns:    58 (49 integer, 49 binary)
+Non-zeros:  187
+Status:     INTEGER OPTIMAL
+Objective:  total_cost = 585 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 total_cost                585                             
+     2 routes_upper_limit
+                                   3                           3 
+     3 routes_with_start_exit
+                                   0            -0             = 
+     4 s1_single_entrance
+                                   1             1             = 
+     5 s2_single_entrance
+                                   1             1             = 
+     6 s3_single_entrance
+                                   1             1             = 
+     7 s1_single_exit
+                                   1             1             = 
+     8 s2_single_exit
+                                   1             1             = 
+     9 s3_single_exit
+                                   1             1             = 
+    10 siblings_together_1[S1]
+                                   0            -0             = 
+    11 siblings_together_1[S2]
+                                   0            -0             = 
+    12 siblings_together_1[S3]
+                                   0            -0             = 
+    13 stations_less_than_5[S1]
+                                   3                           4 
+    14 stations_less_than_5[S2]
+                                   2                           4 
+    15 stations_less_than_5[S3]
+                                   3                           4 
+    16 people_only_one_station[A1]
+                                   1             1             = 
+    17 people_only_one_station[A2]
+                                   1             1             = 
+    18 people_only_one_station[A3]
+                                   1             1             = 
+    19 people_only_one_station[A4]
+                                   1             1             = 
+    20 people_only_one_station[A5]
+                                   1             1             = 
+    21 people_only_one_station[A6]
+                                   1             1             = 
+    22 people_only_one_station[A7]
+                                   1             1             = 
+    23 people_only_one_station[A8]
+                                   1             1             = 
+    24 people_within_possible_stations[A1,S1]
+                                  -1            -1               
+    25 people_within_possible_stations[A1,S2]
+                                   0            -0               
+    26 people_within_possible_stations[A1,S3]
+                                   0            -0               
+    27 people_within_possible_stations[A2,S1]
+                                  -1            -1               
+    28 people_within_possible_stations[A2,S2]
+                                   0            -0               
+    29 people_within_possible_stations[A2,S3]
+                                   0            -0               
+    30 people_within_possible_stations[A3,S1]
+                                  -1            -1               
+    31 people_within_possible_stations[A3,S2]
+                                   0            -0               
+    32 people_within_possible_stations[A3,S3]
+                                   0            -0               
+    33 people_within_possible_stations[A4,S1]
+                                   0            -1               
+    34 people_within_possible_stations[A4,S2]
+                                  -1            -1               
+    35 people_within_possible_stations[A4,S3]
+                                   0            -1               
+    36 people_within_possible_stations[A5,S1]
+                                   0            -1               
+    37 people_within_possible_stations[A5,S2]
+                                  -1            -1               
+    38 people_within_possible_stations[A5,S3]
+                                   0            -1               
+    39 people_within_possible_stations[A6,S1]
+                                   0            -0               
+    40 people_within_possible_stations[A6,S2]
+                                   0            -0               
+    41 people_within_possible_stations[A6,S3]
+                                  -1            -1               
+    42 people_within_possible_stations[A7,S1]
+                                   0            -0               
+    43 people_within_possible_stations[A7,S2]
+                                   0            -0               
+    44 people_within_possible_stations[A7,S3]
+                                  -1            -1               
+    45 people_within_possible_stations[A8,S1]
+                                   0            -0               
+    46 people_within_possible_stations[A8,S2]
+                                   0            -0               
+    47 people_within_possible_stations[A8,S3]
+                                  -1            -1               
+    48 flow_s1_to_s2_less_than_bus_limit_if_route
+                                   0                          -0 
+    49 flow_s1_to_s3_less_than_bus_limit_if_route
+                                   0                          -0 
+    50 flow_s1_to_s4_less_than_bus_limit_if_route
+                               -0.25                          -0 
+    51 flow_s2_to_s1_less_than_bus_limit_if_route
+                                   0                          -0 
+    52 flow_s2_to_s3_less_than_bus_limit_if_route
+                                   0                          -0 
+    53 flow_s2_to_s4_less_than_bus_limit_if_route
+                                -0.5                          -0 
+    54 flow_s3_to_s1_less_than_bus_limit_if_route
+                                   0                          -0 
+    55 flow_s3_to_s2_less_than_bus_limit_if_route
+                                   0                          -0 
+    56 flow_s3_to_s4_less_than_bus_limit_if_route
+                               -0.25                          -0 
+    57 flow_from_s1_equal_flow_to_s1_and_s1_people
+                                   0            -0             = 
+    58 flow_from_s2_equal_flow_to_s2_and_s2_people
+                                   0            -0             = 
+    59 flow_from_s3_equal_flow_to_s3_and_s3_people
+                                   0            -0             = 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 units_x[X00] *              0             0             1 
+     2 units_x[X01] *              1             0             1 
+     3 units_x[X02] *              1             0             1 
+     4 units_x[X03] *              1             0             1 
+     5 units_x[X04] *              0             0             1 
+     6 units_x[X10] *              0             0             1 
+     7 units_x[X11] *              0             0             1 
+     8 units_x[X12] *              0             0             1 
+     9 units_x[X13] *              0             0             1 
+    10 units_x[X14] *              1             0             1 
+    11 units_x[X20] *              0             0             1 
+    12 units_x[X21] *              0             0             1 
+    13 units_x[X22] *              0             0             1 
+    14 units_x[X23] *              0             0             1 
+    15 units_x[X24] *              1             0             1 
+    16 units_x[X30] *              0             0             1 
+    17 units_x[X31] *              0             0             1 
+    18 units_x[X32] *              0             0             1 
+    19 units_x[X33] *              0             0             1 
+    20 units_x[X34] *              1             0             1 
+    21 units_x[X40] *              0             0             1 
+    22 units_x[X41] *              0             0             1 
+    23 units_x[X42] *              0             0             1 
+    24 units_x[X43] *              0             0             1 
+    25 units_x[X44] *              0             0             1 
+    26 units_f[P12]                0             0               
+    27 units_f[P13]                0             0               
+    28 units_f[P14]                3             0               
+    29 units_f[P21]                0             0               
+    30 units_f[P23]                0             0               
+    31 units_f[P24]                2             0               
+    32 units_f[P31]                0             0               
+    33 units_f[P32]                0             0               
+    34 units_f[P34]                3             0               
+    35 units_p[A4,S1]
+                    *              0             0             1 
+    36 units_p[A5,S1]
+                    *              0             0             1 
+    37 units_p[A4,S2]
+                    *              1             0             1 
+    38 units_p[A5,S2]
+                    *              1             0             1 
+    39 units_p[A4,S3]
+                    *              0             0             1 
+    40 units_p[A5,S3]
+                    *              0             0             1 
+    41 units_p[A1,S1]
+                    *              1             0             1 
+    42 units_p[A2,S1]
+                    *              1             0             1 
+    43 units_p[A3,S1]
+                    *              1             0             1 
+    44 units_p[A6,S1]
+                    *              0             0             1 
+    45 units_p[A7,S1]
+                    *              0             0             1 
+    46 units_p[A8,S1]
+                    *              0             0             1 
+    47 units_p[A1,S2]
+                    *              0             0             1 
+    48 units_p[A2,S2]
+                    *              0             0             1 
+    49 units_p[A3,S2]
+                    *              0             0             1 
+    50 units_p[A6,S2]
+                    *              0             0             1 
+    51 units_p[A7,S2]
+                    *              0             0             1 
+    52 units_p[A8,S2]
+                    *              0             0             1 
+    53 units_p[A1,S3]
+                    *              0             0             1 
+    54 units_p[A2,S3]
+                    *              0             0             1 
+    55 units_p[A3,S3]
+                    *              0             0             1 
+    56 units_p[A6,S3]
+                    *              1             0             1 
+    57 units_p[A7,S3]
+                    *              1             0             1 
+    58 units_p[A8,S3]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
