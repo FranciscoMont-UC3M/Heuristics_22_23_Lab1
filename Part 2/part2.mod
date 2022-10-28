@@ -30,7 +30,7 @@ s.t. s3_single_exit : units_x['X31']+units_x['X32']+units_x['X34'] = 1;
 
 s.t. siblings_together_1 {s in STATION} : units_p['A4',s] = units_p['A5',s];
 
-s.t. stations_less_than_5 {s in STATION} : sum{p in PEOPLE} units_p[p,s] <= bus_cap; 
+s.t. stations_less_than_bus_cap {s in STATION} : sum{p in PEOPLE} units_p[p,s] <= bus_cap; 
 
 s.t. people_only_one_station {p in PEOPLE}: sum{s in STATION} units_p[p,s] = 1; 
 
